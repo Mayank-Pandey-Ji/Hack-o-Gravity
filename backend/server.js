@@ -5,7 +5,9 @@ import cors from 'cors'
 dotenv.config();
 
 const app = express();
-app.use(cors())
+app.use(cors({
+  origin: ["https://your-frontend-domain.vercel.app", "http://localhost:5173"]
+}));
 app.use(express.json());
 
 // Root endpoint
