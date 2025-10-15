@@ -6,7 +6,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ["https://your-frontend-domain.vercel.app", "http://localhost:5173"]
+  origin: ["http://localhost:5173" , "https://algomind01.netlify.app"]
 }));
 app.use(express.json());
 
